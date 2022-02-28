@@ -24,7 +24,7 @@ While python comes with the library smtplib and ssl preinstalled.
 
 You can install pynput with :
 
-pip install pynput
+     pip install pynput
 
 **What is Pynput?**
 
