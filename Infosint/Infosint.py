@@ -34,4 +34,4 @@ $$$$$$\$$ |  $$ $$ |    \$$$$$$  $$$$$$$  $$ $$ |  $$ |\$$$$  |
     print(Y+"Note : In Web vulnerability scanning type 'help' to find tools.")
     a=int(input("Module >> "))
     Main(a)
-    
+
