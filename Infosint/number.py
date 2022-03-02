@@ -1,4 +1,3 @@
-from tkinter.tix import InputOnly
 import requests
 
 cyan="\033[1;36;40m"
@@ -18,5 +17,5 @@ def number():
 
 if __name__=="__main__":
     number()
-    
+
     
