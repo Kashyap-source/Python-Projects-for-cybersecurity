@@ -23,7 +23,7 @@ def iplocate():
         print('ISP         : ',ipinfo['isp'])
         print(cyan+'Opening Location in browser')
         mapurl = "https://maps.google.com/maps?q=%s,+%s" % (lat, lon)
-        webbrowser.open(manurl, new=2)
+        webbrowser.open(mapurl, new=2)
         print('')
     else:
         print(red+"IP location Not Found !!")

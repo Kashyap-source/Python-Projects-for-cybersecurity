@@ -1,4 +1,3 @@
-import re
 import requests
 from gmplot import *
 import webbrowser
@@ -11,7 +10,7 @@ Y = '\033[1;33;40m'
 def read_multiple_ip():
     print(Y+"Note : This tool requires api key please configure the api key and use it.")
     ip_file=input("Enter the file path >>")
-    lets = []
+    lats = []
     lons = []
     f = open(ip_file, "r")
     f1 = f.readlines()
@@ -21,7 +20,7 @@ def read_multiple_ip():
         if resp['lat'] and resp['lon']:
             lats.append(resp['lat'])
             lons.append(resp['lon'])
-    heat_map(lasts,lons)
+    heat_map(lats,lons)
 
 def heat_map(lats,lons):
     gmap3 = gmaplot.GoogleMapPlotter(20.5937, 78.9629, 5)

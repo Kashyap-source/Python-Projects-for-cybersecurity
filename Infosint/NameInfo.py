@@ -7,7 +7,7 @@ red="\033[1;31;40m"
 Y = '\033[1;33;40m'
 def Nameinfo():
     name = input("Enter the Full name >> ")
-    header = {
+    headers = {
         'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Methods': 'GET',
         'Access-Control-Allow-Headers': 'Content-Type',
@@ -16,10 +16,10 @@ def Nameinfo():
     }
     try:
         url = "https://www.google.com/search?q="+name
-        response=requests.get(url,headers=header)
+        response=requests.get(url,headers=headers)
         socialmedia=["instagram","facebook","twitter","linkedin","github","scholar","hackerearth","hackerrank","hackerone","tiktok","youtube","books","researchgate","publons","orcid","maps"]
         linklist=[]
-        soup=BeautifulSoup(response.content, 'html.parser')
+        soup=BeautifulSoup(response.content,'html.parser')
         for g in soup.find_all('div', class_='g'):
             anchors = g.find_all('a')
             if 'href' in str(anchors[0]):
@@ -44,7 +44,8 @@ def Nameinfo():
         f=0
         for g in soup.find_all('div', class_='g'):
             links = g.find_all('a')
-            if 'href' in str(links[0]['href'])
+            if 'href' in str(links[0]):
+                print(green+"[+]"+links[0]['href'])
         if c == 0:
             print(red+"No Info about this person")
     except Exception as e:

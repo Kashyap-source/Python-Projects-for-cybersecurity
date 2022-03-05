@@ -15,8 +15,8 @@ def Links():
     soup=BeautifulSoup(response.text,'html.parser')
     for link in soup.find_all('a'):
         lin=link.get('href')
-        if (lin.startswitch('http')):
-            print(C+"[+]",lin)
+        if(lin.startswith('http')):
+            print(C+"[+] ",lin)
     print(G+"Freched Successfully.....")
 
 if __name__=="__main__":
