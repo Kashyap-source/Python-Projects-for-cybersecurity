@@ -12,5 +12,7 @@ Run the "traffic generator.sh" file by executing it as sudo.
 
 General desktop overview. Traffic generator script in action.
 
+![alt text](https://github.com/Kashyap-source/Python-Projects-for-cybersecurity/blob/main/Snort/photos/output.png)
+
 Once you choose an action, the menu disappears and opens a terminal instance to show you the output of the action.
 
